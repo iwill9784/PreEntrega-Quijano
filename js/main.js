@@ -45,20 +45,26 @@ function cotizar(n){
 }
 
 alert("Bienvenido a Petlofr")
-let continente = prompt("Ingrese el producto que te interesa:\n\n- ricocan\n- allktoy\n- breeder\n- dogChow")
-let continenteLowerCase = continente.toLocaleLowerCase()
-if(continenteLowerCase === "ricocan"){
+let perro = prompt("Ingrese el producto que te interesa:\n\n- ricocan\n- allktoy\n- breeder\n- dogChow")
+let perroproduct = perro.toLocaleLowerCase()
+if(perroproduct === "ricocan"){
     alert("Gracias por escoger Ricocan\n\nTenemos estas opciones a:\n- Cachorro\n- Joven\n- Adulto")
+    let preciodeperro = 1; 
+    cotizar(preciodeperro)
 
+}else if(perroproduct === "allktoy"){
+    alert("Gracias por escoger Allktoy\n\nTenemos estas opciones a:\n- Cachorro\n- Joven\n- Adulto")
+    let preciodeperro = 2; 
+    cotizar(preciodeperro)
 
-}else if(continenteLowerCase === "allktoy"){
-    alert("Gracias por escoger Ricocan\n\nTenemos estas opciones a:\n- Cachorro\n- Joven\n- Adulto")
+}else if(perroproduct === "breeder"){
+    alert("Gracias por escoger Breeder\n\nTenemos estas opciones a:\n- Cachorro\n- Joven\n- Adulto")
+    let preciodeperro = 3; 
+    cotizar(preciodeperro)
 
-
-}else if(continenteLowerCase === "breeder"){
-    alert("Gracias por escoger Ricocan\n\nTenemos estas opciones a:\n- Cachorro\n- Joven\n- Adulto")
-
-
+}else if(perroproduct === "DogChow"){
+    alert("Gracias por escoger DogChow\n\nTenemos estas opciones a:\n- Cachorro\n- Joven\n- Adulto")
+    cotizar(preciodeperro)
 
 }else{
     alert("Lo siento, no tenemos ese producto")
